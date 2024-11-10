@@ -1,0 +1,194 @@
+[
+  {
+    "question": "Does this statement: Driver initiates a call via SWP only when the vehicle is stopped, comply with this technical regulation: \"Users can call via IVI and make phone calls. Calls via SWP can only be made when the vehicle is stopped. The necessary permissions have been granted for call information, contacts and recent calls. The driver's smartphone is connected to the vehicle system via Bluetooth?\\",
+    "answer": "Yes, it complies in part - Calls via SWP can only be made when the vehicle is stopped."
+  },
+  {
+    "question": "Is it true that: The driver initiates a call via SWP only when the vehicle is stopped, according to this technical regulation: IVI is not enabled. The vehicle can be switched to any of the PRND modes. No permissions need to be provided?",
+    "answer": "Does not correspond in the part: IVI is not enabled, the vehicle can be switched to any of the PRND modes. No permissions need to be provided."
+  },
+  {
+    "question": "Does this statement: Selection of media output source: AM/FM radio, Internet radio, USB storage device, internal SD card and other devices connected via Bluetooth can only be used during stop by SWP operation, comply with the following technical regulation: \"SWP can switch between network/USB/Bluetooth music interfaces. Users can switch music sources via SWP or voice. It can only be used when the vehicle is stopped by SWP operation?\\",
+    "answer": "Yes, it complies with the part: Users can switch music sources via SWP or voice. It can only be used when the vehicle is stopped by SWP operation."
+  },
+  {
+    "question": "Does this statement: Media output source selection: AM/FM radio, Internet radio, USB storage device, internal SD card and other devices connected via Bluetooth can only be used during stop using SWP operation, comply with the following technical regulation: \"The Atom vehicle can play media from a list of sources such as AM/FM radio, Internet radio, USB storage device, internal SD card and other devices connected via Bluetooth. The system can be used in any of the PRND modes. Does the voice recognition system recognize voice commands for mute/pause?\\",
+    "answer": "No, it does not comply with the part: The system can be used in any of the PRND modes."
+  },
+  {
+    "question": "Does this statement ERA-Glonass initiates communication with the emergency service when the User long presses the SOS button to activate E-Call, comply with the following technical regulation : \"The User long presses the SOS button to activate E-Call. ERA downloads the vehicle data and makes an emergency call to 112 via the built-in communication module. ERA detects the signal of pressing the E-CALL button and goes into the CALL CONFIRM state. ERA sends a mute signal to IVI. ERA plays a \"BEEP BEEP\" sound signal and the LED flashes, offering to cancel the call. If the network is unavailable, an SMS with the MSD message is sent?",
+    "answer": "Yes, it complies in the part: The User long presses the SOS button to activate E-Call"
+  },
+  {
+    "question": "Does this statement: ERA-Glonass initiates communication with the emergency service when the User presses the SOS button for long time to activate E-Call, correspond to the following technical regulation: \"The vehicle sensors detect a collision and activate the emergency communication function. SSTS has additional outputs: SSTS shows that when the call is connected for 3 seconds, the call interface is hidden and IVI no longer displays the call interface?",
+    "answer": "No, it does not correspond in the part: The vehicle sensors detect a collision and activate the emergency communication function. SSTS has additional outputs: SSTS shows that when the call is connected for 3 seconds, the call interface is hidden and IVI no longer displays the call interface."
+  },
+  {
+    "question": "Does this statement: When a mobile phone rings, the SWP displays a Bluetooth phone dialog box, complies with the following technical regulation: \"When a call comes in, the SWP displays a Bluetooth dialog box with the phone number and name (if the number is saved in the phone's address book); if not saved, only the number is displayed. The ringtone of the call is played through the car speakers. The IVI system is started. The signal is sent. The driver can accept or reject the call using the buttons on the steering wheel (in_10) or using a voice assistant command?",
+    "answer": "Yes, it complies with the following: When a call comes in, the SWP displays a Bluetooth dialog box with the phone number and name (if the number is saved in the phone's address book); if not saved, only the number is displayed."
+  },
+  {
+    "question": "Does this statement: When a mobile phone rings, SWP displays a Bluetooth phone dialog box, comply with the following technical regulations: \"When a call comes in, the Bluetooth dialog box with the phone number and name does not appear on SWP. The call ringtone is played via the mobile audio channel. The status display on HUD and SWP is specified. The methods for accepting/rejecting calls are specified - the buttons on the steering wheel and the voice assistant. If music is played on IVI via out_24, the music becomes quieter so that the sound of the incoming call is heard at a comfortable level. There is a function to turn off the music. The internal ambient lighting (out_12) changes color, signaling an incoming call?",
+    "answer": "No, it does not comply with the part: When a call comes in, the Bluetooth dialog box with the phone number and name does not appear on SWP. The call ringtone is played via the mobile audio channel."
+  },
+  {
+    "question": "Does this statement: To revoke a driver's or passenger's right to access a vehicle, the driver must select the \"Revoke Access\" option in the \"Access Management\" section of the ATOM app on their smartphone, comply with the following technical regulations: \"The driver opens the ATOM app on their in_5 smartphone and goes to the \"Access Management\" section The system displays a list of active drivers/passengers The owner selects the \"Revoke Access\" option to delete a specific profile. When connecting to the car via the app, the access recorded on it is automatically deleted. All previously generated accesses by this profile are also deleted. (if applicable) Rights granted, settings saved in the user profile?",
+    "answer": "Yes, complies in part: The driver opens the ATOM app on their in_5 smartphone. and goes to the \"Access Management\" section. The system displays a list of active drivers/passengers. The owner selects the \"Revoke Access\" option to delete a specific profile."
+  },
+  {
+    "question": "Does this statement: To revoke a driver's or passenger's access to a vehicle, the driver must select the \"Revoke Access\" option in the \"Access Management\" section of the ATOM app on their smartphone, comply with the following technical regulation: \"At least one DK is present; The vehicle mode is not 'End of Life', other modes are applicable. User services send a request to delete the deleted DK; User services send a request to delete the DK; User services send a list of renamed DKs remotely. If the vehicle does not have a direct connection to the app, the owner can send a command to delete access. Access will be deleted the next time the vehicle connects to the Internet. If the vehicle is moving, access will be announced after the vehicle is stopped (parking mode). The ATOM app receives the status of the DK rename list from the communication services, and if successful, the ATOM app displays the updated name, otherwise the old name is returned?",
+    "answer": "No, complies with the part: At least one DK is present; The vehicle mode is not 'End of life', other modes are applicable. User services send a request to delete the remote DK; User services send a request to delete the DK; User services send a list of renamed DKs remotely. If the vehicle does not have a direct connection with the application, the owner can send a command to delete the access. The access will be deleted when the vehicle next connects to the Internet. If the vehicle is moving, the access will be announced after the vehicle stops (parking mode). ATOM APP receives the status of the DK rename list from the communication services, and if successful, ATOM APP displays the updated name, otherwise, the old name is returned."
+  },
+  {
+    "question": "Does this statement: FM radio playback sound can be turned off/on only when the vehicle is stopped by the SWP operation, comply with the following technical regulation: \"When playing online radio stations, a pause operation can be performed, and the sound can be turned off in the live broadcast. It can be used only when the vehicle is stopped by the SWP operation. The function is switched using the control knob on the steering wheel. Can the voice recognition system recognize the mute/pause voice commands?\\",
+    "answer": "Yes, it complies with the part: When playing online radio stations, a pause operation can be performed, and the sound can be turned off in the live broadcast. It can be used only when the vehicle is stopped by the SWP operation."
+  },
+  {
+    "question": "Does this statement: FM radio playback sound can be turned off/on only when the vehicle is stopped using the SWP operation, comply with the following technical regulation: \"When playing online radio stations, the pause operation cannot be performed, nor can the sound be turned off in live broadcasts. It can be used in any of the PRND modes. The voice recognition system does not recognize the voice commands of mute/pause?",
+    "answer": "No, it does not comply with the part: It can be used in any of the PRND modes. The voice recognition system does not recognize the voice commands of mute/pause."
+  },
+  {
+    "question": "Does this statement: Support for searching radio stations using soft switches can only be used when the vehicle is stopped by SWP operation, comply with the following technical regulation: \"Support for searching radio stations using soft switches can only be used when the vehicle is stopped by SWP operation. The user can operate the display screen and switches the next/previous FM radio station in the list. Users listen to the radio and use voice search for radio stations?",
+    "answer": "Yes, it complies with the part: Support for searching radio stations using soft switches can only be used when the vehicle is stopped by SWP operation. The user can operate the display screen and switches the next/previous FM radio station in the list. Users listen to the radio and use voice search for radio stations."
+  },
+  {
+    "question": "Does this statement: Support for searching radio stations using soft switches can only be used when the vehicle is stopped using SWP operation, comply with the following technical regulation: \"Support for searching radio stations using soft switches can be used in any of the PRND modes. The user can operate the display screen or IVI switches the next/previous FM radio station in the list?",
+    "answer": "No, it does not comply with the part: Support for searching radio stations using soft switches can be used in any of the PRND modes."
+  },
+  {
+    "question": "Does this statement: When the vehicle is stopped, the hotspot can be turned on or off by touching the SWP, and when the vehicle is moving, the hotspot can be turned on or off by VA, comply with the following technical regulation: \"Users can turn on or off the vehicle hotspot according to their needs, and it is turned off by default. Only when the vehicle is stopped, the hotspot can be turned on or off by touching the SWP. When the vehicle is moving, hotspots can be turned on or off by voice through the Voice Assistant (VA)?",
+    "answer": "Yes, it complies with the part: Users can turn on or off the vehicle hotspot according to their needs, and it is turned off by default. Only when the vehicle is stopped, the hotspot can be turned on or off by touching the SWP. When the vehicle is moving, hotspots can be turned on or off by voice through the Voice Assistant (VA)."
+  },
+  {
+    "question": "Does this statement: When the car is stopped, the hotspot can be turned on or off by tapping the SWP, and when the car is moving, the hotspot can be turned on or off using the VA, comply with the following technical regulation : \"Users can turn on or off the car's hotspot via the voice assistant (VA). The user controls the hotspot switch via a voice command on the microphone. SWP Android activates the hotspot in any of the PRND modes, and VA informs the user about its on/off. SWP Android shows a notification with a \"Show hotspot settings\" button, which opens the hotspot settings when pressed (the notification disappears after 5 seconds if the button is not pressed). When the user turns off the hotspot, SWP Android shows that the hotspot is disabled and all connected devices are disconnected. The user asks the voice assistant to turn off the hotspot. SWP Android deactivates the hotspot, VA informs the user about it, and all devices are disconnected from the hotspot. Hotspot switch, name, password are in the same menu level. By default, the hotspot is disabled every time the power is turned on. If no device is connected within 10 minutes after the hotspot is turned on, it will automatically turn off?",
+    "answer": "No, it does not match the part: WP Android activates the hotspot in any of the PRND modes. When the user turns off the hotspot, SWP Android shows that the hotspot is disabled, and all connected devices are disconnected. The user asks the voice assistant to turn off the hotspot. SWP Android deactivates the hotspot, VA informs the user, and all devices are disconnected from the hotspot."
+  },
+  {
+    "question": "Does this statement: The hotspot name and password setting can only be used when the vehicle is stopped, comply with the following technical regulation: \"Users can change the hotspot name and password of the vehicle according to their needs. This function can only be used when the vehicle is stopped. The user can control the SWP; The IVI hotspot is turned on. Start conditions (a): Users set the hotspot name and password in the SWP, and IVI_IFT sends a command. The hotspot name can be a combination of Russian, English and numbers. After entering, click \"Confirm\" to change the personal name. The hotspot name can be a combination of Russian, English alphabets and numbers. The maximum name length is cal.NameLength_Hotspot (default, 32 bytes, TBD), the minimum is one character. After setting the hotspot name and password, the SGW should transmit the IVI setting results within (default 1 second)?",
+    "answer": "Yes, it complies in the part: Users can change the name and password of the vehicle hotspot according to their needs. This function can only be used when the vehicle is stopped. The user can control the SWP."
+  },
+  {
+    "question": "Does this statement: The setting of the hotspot name and password can only be used when the vehicle is stopped, comply with the following technical regulation: \"Users can change the name and password of the vehicle hotspot according to their needs in any of the PRND modes. The IVI hotspot does not affect the operation of the hotspot. The users are only 1. Driver 2. Owner?",
+    "answer": "No, it does not comply with the part: Users can change the name and password of the vehicle hotspot according to their needs in any of the PRND modes."
+  },
+  {
+    "question": "Does this statement: Every time the ignition is turned on (hw.KL15ON), ERA must activate the self-diagnosis function and perform self-diagnosis, comply with the following technical regulations: \"Every time the ignition is turned on (hw.KL15ON), ERA must activate the self-diagnosis function and perform self-diagnosis; ERA starts self-diagnosis when the car is turned on. Self-diagnosis lasts about 30 s. In the ERA state, ERA performs self-diagnosis every cal.ERASelfTest (default 1 min, TBD); ERA must switch to power from the internal battery at cal.ERASelfTest (default 1 min, TBD)?",
+    "answer": "Yes, it complies with the part: Every time the ignition is turned on (hw.KL15ON), ERA must activate the self-diagnosis function and perform self-diagnosis; ERA starts self-diagnosis when the car is turned on. Self-diagnosis lasts about 30 s."
+  },
+  {
+    "question": "Does this statement: Every time the ignition is turned on (hw.KL15ON) ERA must activate the self-diagnosis function and perform self-diagnosis, comply with the following technical regulations: \"Every time during self-diagnosis, when a malfunction is detected, the red LED on the SOS button (\"MalfunctionEraGlonass_SOSButton\") lights up?",
+    "answer": "No, it does not comply in the part: Every time during self-diagnosis, when a malfunction is detected, the red LED on the SOS button (\"MalfunctionEraGlonass_SOSButton\") lights up."
+  },
+  {
+    "question": "Does this statement: The ability to add Internet radio to the favorites list only exists when the vehicle is stopped by SWP operation comply with the following technical regulation: \"Users can set local music as favorites and view the corresponding song information. This unction is applicable to USB music, Internet radio and online music. It can only be used when the vehicle is stopped by SWP operation. Users can add or delete songs from favorites and view the detailed song information. Users can add or delete radio stations through a single icon interface. If the song information cannot be obtained, only the song title will be displayed. If the USB storage device is disconnected or the song is deleted from the USB storage device, the song in the favorites list will be inactive?",
+    "answer": "Yes, it complies with the part: Users can set local music as favorites and view the corresponding song information. This function is applicable to USB music, Internet radio and online music. It can only be used when the vehicle is stopped by the SWP operation."
+  },
+  {
+    "question": "Does this statement: The ability to add Internet radio to the favorites list only exists when the vehicle is stopped by SWP operation,comply with the following technical regulation: \"Users can set local music as favorites and view the corresponding song information in any of the PRNDP modes. If the USB storage device is disconnected or the song is deleted from the USB storage device, the song in the favorites list will still be active?",
+    "answer": "No, it does not comply with the part: Users can set local music as favorites and view the corresponding song information in any of the PRNDP modes."
+  },
+  {
+    "question": "Does this statement: \"The ABS system prevents the wheels from locking when braking, comply with the following technical regulation: The ABS system prevents the wheels from locking when braking, improving control over the car and reducing the risk of skidding?",
+    "answer": "Yes, it complies in part: The ABS system prevents the wheels from locking when braking, improving control over the car and reducing the risk of skidding."
+  },
+  {
+    "question": "Does this statement: \"The ABS system prevents the wheels from locking when braking, correspond to the following statement: \"The ABS system does not prevent the wheels from locking when braking, and does not improve vehicle control or reduce the risk of skidding?",
+    "answer": "No, it does not correspond in the part: The ABS system does not prevent the wheels from locking when braking, and does not improve vehicle control or reduce the risk of skidding."
+  },
+  {
+    "question": "Does this statement: A properly functioning vehicle braking system comply with the following technical regulations: The vehicle starts moving and the braking system functions correctly, is checked and is ready for use. - Applying the brakes - Generating brake pressure brake pipes to the brake mechanisms at each wheel. - Applying braking force - Slowing the vehicle - Driver monitoring - Completing braking - Waiting for next use: The braking system returns to its original state, ready for the next use?",
+    "answer": "Yes, it complies with the following: The vehicle starts moving and the braking system functions correctly, is checked and is ready for use."
+  },
+  {
+    "question": "Does this statement: A vehicle's braking system is in good working order comply with the following technical regulation: The vehicle starts moving, but there is a fault in the braking system that the driver may not be aware of. - Application of brakes: The driver presses the brake pedal to slow or stop the vehicle. - Insufficient brake pressure - No or insufficient braking force - Poor or no deceleration - Loss of control - Emergency stop - Braking system remains faulty: After the vehicle has come to a complete stop, the braking system remains faulty and requires repair before the next use?",
+    "answer": "No, it does not comply with the part: The vehicle starts moving, but there is a fault in the braking system that the driver may not be aware of."
+  },
+  {
+    "question": "Does this statement: Correct operation of the creep system (Creep) when using the braking system comply with the following echnical regulation: - The driver releases the brake pedal in_23 when the car is in Drive (D) or Reverse (R) mode. - The Creep function is automatically activated, causing the car to move forward at low speed without pressing the accelerator pedal in_22. - The car maintains a constant and slow speed (similar to the behavior of traditional cars with an internal combustion engine). Postconditions: - The car moves at a slow and constant speed without the driver pressing the accelerator pedal. - The Creep function remains active as long as the car is in Drive (D) or Reverse (R) mode and the brake pedal in_23 or accelerator pedal in_22 is not pressed?",
+    "answer": "Yes, it complies with the part: The Creep function is automatically activated."
+  },
+  {
+    "question": "Does this statement: Correct operation of the creep system when using the brake system comply with the following technical regulations: - The driver releases the brake pedal in_23 when the vehicle is in Drive (D) or Reverse (R) mode. - The Creep function does not turn on automatically - The vehicle does not maintain a constant and slow speed - The Creep function does not remain active while the vehicle is in Drive (D) or Reverse (R) mode and the brake pedal in_23 or accelerator in_22 is not pressed?",
+    "answer": "No, it does not comply with the following: - The Creep function does not turn on automatically - The vehicle does not maintain a constant and slow speed - The Creep function does not remain active while the vehicle is in Drive (D) or Reverse (R) mode and the brake pedal in_23 or accelerator in_22 is not pressed."
+  },
+  {
+    "question": "Does this statement: Auto Hold function activated: Vehicle stopped, holds vehicle in place, comply with the following technical regulation: Auto Hold function activated: Vehicle stopped, and Auto Hold system holds vehicle in place even if driver releases brake pedal (e.g. at traffic lights or in traffic jam)?",
+    "answer": "Yes, it complies in part: Auto Hold function activated: Vehicle stopped, and Auto Hold system holds vehicle in place even if driver releases brake pedal (e.g. at traffic lights or in traffic jam)."
+  },
+  {
+    "question": "Does this statement: Auto Hold function activated: Vehicle is stopped, holds the vehicle in place, comply with the following technical regulation: - Auto Hold function activated: Vehicle is not stopped and the Auto Hold system does not hold the vehicle in place, even if the driver releases the brake pedal (e.g. at a traffic light or in a traffic jam)?",
+    "answer": "No, it does not comply with the part: Auto Hold function activated: Vehicle is not stopped and the Auto Hold system does not hold the vehicle in place, even if the driver releases the brake pedal (e.g. at a traffic light or in a traffic jam)."
+  },
+  {
+    "question": "Does this statement: Enabling the automatic vehicle hold (AVH) when using the braking system puts the car into hold mode, comply with the following technical regulations: - Activation of the AVH function: The driver activates the AVH system (e.g. using a special button on the panel), and the system goes into the ready hold mode. - Switching on AVH: Once the car has come to a complete stop, the AVH system automatically holds the car in place, allowing the driver to release the brake pedal without the risk of rolling back. - End of use of AVH: When the driver manually switches off the AVH system or puts the car into park mode, the system is completely deactivated and no longer holds the car in place?",
+    "answer": "Yes, it complies in part: - Activation of the AVH function: The driver activates the AVH system (e.g. using a special button on the panel), and the system goes into the ready hold mode. - AVH activation: Once the vehicle has come to a complete stop, the AVH system automatically holds the vehicle in place, allowing the driver to release the brake pedal without the risk of rolling back. - AVH deactivation: When the driver manually deactivates the AVH system or places the vehicle in Park mode, the system is completely deactivated and no longer holds the vehicle in place."
+  },
+  {
+    "question": "Does this statement: Enabling the automatic vehicle hold (AVH) when using the braking system puts the vehicle into hold mode, comply with the following technical regulations: Activation of the AVH function: The driver activates the AVH system (e.g. using a special button on the panel), but the system does not switch to the ready hold mode. - The AVH system does not switch on after the vehicle has come to a complete stop?",
+    "answer": "No, it does not comply with the part: Activation of the AVH function: The driver activates the AVH system (e.g. using a special button on the panel), but the system does not switch to the ready hold mode. - The AVH system does not switch on after the vehicle has come to a complete stop"
+  },
+  {
+    "question": "Does this statement: Activating the HDC (Hill Descent Control) function while using the braking system reduces the additional acceleration due to a surface slope, comply with the following technical regulation: HDC is activated. Postconditions: 1. The vehicle systems reduce the additional acceleration due to a surface slope. 2. The function will be inactive if one of the preconditions (pedal depression factor or gradient factor) is not met. 3. The HDC status icon is displayed on out_1, out_2. Alternative scenario: 1. When the driver switches off the function in_2, out_1, out_ 2 are displayed for driver confirmation?",
+    "answer": "Yes, it complies with the part: HDC is activated. Postconditions: 1. The vehicle systems reduce the additional acceleration due to a surface slope. 2. The function will be inactive if one of the preconditions (pedal depression factor or gradient factor) is not met. 3. HDC status icon is displayed on out_1, out_2. Alternative scenario: 1. When the driver turns off the in_2 function, out_1, out_ 2 is displayed for the driver to confirm."
+  },
+  {
+    "question": "Does this statement: Activation of the HDC (Hill Descent Control) function when using the braking system reduces the additional acceleration due to a surface slope, comply with the following technical regulation: HDC is not activated. The vehicle systems do not reduce the additional acceleration due to a surface slope?",
+    "answer": "No, it complies in the part: HDC is not activated. The vehicle systems do not reduce the additional acceleration due to a surface slope."
+  },
+  {
+    "question": "Does this statement: The Hill Hold function is automatically activated when the brake system is used and holds the vehicle in place, preventing it from rolling back, comply with the following technical regulations: When the driver releases the brake pedal, the Hill Hold function is automatically activated and holds the vehicle in place, preventing it from rolling back. - Keeping the vehicle in place: Hill Hold maintains the required braking force on the wheels, holding the vehicle in place for a few seconds while the driver moves his foot from the brake to the accelerator pedal. - Starting off: The driver presses the accelerator pedal, and Hill Hold is automatically released, smoothly transferring control of the braking system to the driver.?",
+    "answer": "Yes, it complies with the part: When the driver releases the brake pedal, the Hill Hold function is automatically activated and holds the vehicle in place, preventing it from rolling back. The driver presses the accelerator pedal, and Hill Hold is automatically released, smoothly transferring control brake system to the driver."
+  },
+  {
+    "question": "Does this statement: The Hill Hold function is automatically activated when the brake system is used and holds the vehicle in place, preventing it from rolling back, comply with the following technical regulation: When the brake pedal is released, Hill Hold is not automatically activated and the system does not hold the vehicle in place?",
+    "answer": "No, it does not comply with the part: When the brake pedal is released, Hill Hold is not automatically activated and the system does not hold the vehicle in place."
+  },
+  {
+    "question": "Does this statement: The sensor displays a warning about low washer fluid level, when the fluid level is 10% or less, comply with the following technical regulation: The washer fluid volume sensor shows that the fluid level is 10%. <Dependency: displaying the instruction for filling the washer fluid> The driver receives an audible and visual notification via out_2, out_5 or out_25?",
+    "answer": "Yes, it complies in the part: The washer fluid volume sensor shows that the fluid level is 10%, The driver receives an audible and visual notification."
+  },
+  {
+    "question": "Does this statement: The sensor displays a low washer fluid warning when the fluid level is 10% or less, comply with the following technical regulation: The washer fluid volume sensor does not indicate that the fluid level is 10%. <Dependency: displaying the washer fluid filling instruction> The driver does not receive an audible and visual alert via out_2, out_5 or out_25?",
+    "answer": "No, it does not comply with the part: The washer fluid volume sensor does not indicate that the fluid level is 10%. <Dependency: displaying the washer fluid filling instruction> The driver does not receive an audible and visual alert via out_2, out_5 or out_25."
+  },
+  {
+    "question": "Does this statement: The vehicle system informs the driver of a fault in the rain and light sensor and ensures that the driver can take appropriate action in response to the fault, comply with the following technical regulation: 1. The system detects a fault in either the rain sensor or the light sensor. 2. The system displays a fault warning on the out_2.SWP and out_5. Smartphones via the Atom app. 3. The automatic wiper function?",
+    "answer": "Yes, it complies in part: 1. The system detects a fault in either the rain sensor or the light sensor. 2. The system displays a fault warning on the out_2.SWP and out_5. Smartphones via the Atom app."
+  },
+  {
+    "question": "Does this statement: The vehicle system informs the driver of a fault in the rain and light sensor and ensures that the driver can take appropriate action in response to the fault, comply with the following technical regulations: 1. The system does not detect a fault in either the rain or light sensor. 2. The system does not display a fault warning on the out_2.SWP and out_5. Smartphones via the Atom app. 3. The automatic windscreen wiper function does not work, the driver is unaware that something is faulty 4. The automatic headlight control function (automatic low beam) does not work, because the system is unaware of the fault.?",
+    "answer": "No, it does not comply with the following: 1. The system does not detect a fault in either the rain or light sensor. 2. The system does not display a fault warning on the out_2.SWP and out_5. Smartphones via the Atom app."
+  },
+  {
+    "question": "Does this statement: Activation of the rear camera washer via SWP Android, or when R mode is engaged, comply with the following technical regulations: - The driver activates the rear camera cleaning function in in_2. SWP Android by pressing once - The washer system is activated by spraying washer fluid into the rear camera (the washer system operates for X seconds and automatically turns off) - Activation of the rear nozzle for cleaning the rear camera is automatically triggered every 5 times (by default) when R mode is engaged. (the washer system operates for X seconds and automatically turns off)?",
+    "answer": "Yes, it complies with the following: - The driver activates the rear camera cleaning function in in_2. SWP Android by pressing once - The washer system is activated by spraying washer fluid into the rear camera (the washer system operates for X seconds and automatically turns off) - Activation of the rear The rear view camera cleaning nozzles automatically operate every 5 times (default) when the R mode is turned on. (The washer system operates for X seconds and turns off automatically)."
+  },
+  {
+    "question": "Does this statement: Activation of the rear camera washer via SWP Android or when R mode is engaged, comply with the following technical regulations: 1. The driver cannot activate the rear camera cleaning function in in_2. SWP Android by pressing once 2. The washer system is not activated by spraying washer fluid into the rear camera (the washer system does not work for X seconds)?",
+    "answer": "No, it does not comply with the following: 1. The driver cannot activate the rear camera cleaning function in in_2. SWP Android by pressing once 2. The washer system is not activated by spraying washer fluid into the rear camera (the washer system does not work for X seconds). 3. Activation of the rear nozzle for cleaning the rear camera does not work automatically every 5 times (by default) when R mode is engaged)."
+  },
+  {
+    "question": "Does this statement: Continuous spray of windshield washer when pressing and holding the windshield wiper and washer button in_10, comply with the following technical regulations: 1. The driver presses and holds the windshield wiper and washer button in_10. 2. Windshield washer fluid is continuously sprayed onto the windshield. 3. After releasing the button, the windshield wipers perform two additional strokes, and the third stroke occurs after a few seconds?",
+    "answer": "Yes, it complies in part: 1. The driver presses and holds the windshield wiper and washer button in_10."
+  },
+  {
+    "question": "Does this statement: Continuous spray of windshield washer when the windshield wiper and washer button in_10 is pressed and held, comply with the following technical regulations: 1. The driver presses and holds the windshield wiper and washer button in_10, but it does not work. 2. Windshield washer fluid is not sprayed onto the windshield?",
+    "answer": "No, it does not comply with the following: 1. The driver presses and holds the windshield wiper and washer button in_10, but it does not work. 2. Windshield washer fluid is not sprayed onto the windshield."
+  },
+  {
+    "question": "Does this statement: Provide indications that the AVAS function has problems using SWP out_2 and Push notification comply with the following technical regulation: Malfunction of the vehicle alert system (AVAS) is reflected by: - SWP out_2 displays a message about the problem - Push notification inside the Atom out_5 and out_44 ATOM HUB mobile application?",
+    "answer": "Yes, it complies in part: Malfunction of the vehicle alert system (AVAS) is reflected by: - SWP out_2 displays a message about the problem - Push notification inside the Atom out_5 and out_44 ATOM HUB mobile application."
+  },
+  {
+    "question": "Does this statement: Provide indications that the AVAS function has problems using SWP out_2 and Push notification comply with the following technical regulation: Malfunction of the vehicle alert system (AVAS) cannot be shown because: - SWP out_2 does not display a message that AVAS has problems - Push notification inside the Atom out_5 mobile app and out_44 ATOM HUB does not arrive?",
+    "answer": "No, it complies in part: Malfunction of the vehicle alert system (AVAS) cannot be shown because:- SWP out_2 does not display a message that AVAS has problems - Push notification inside the Atom out_5 mobile app and out_44 ATOM HUB does not arrive."
+  },
+  {
+    "question": "Does this statement: Acoustic Vehicle Alert System (AVAS): Use of the pedestrian alert system when driving at speeds below approximately 32 km/h or when reversing comply with the following technical regulations: Only one sound is available to the driver. The function cannot be switched off. 1) When the vehicle is moving in drive mode R (vehicle speed > 0), it notifies surrounding road users via out_27.AVAS of reversing or when driving at speeds below approximately 32 km/h; 2) When switching from drive mode R to any other or when the vehicle speed is 0, out_27.AVAS is switched off?",
+    "answer": "Yes, it complies with the part: Only one sound is available to the driver. The function cannot be switched off. 1) When the vehicle is moving in drive mode R (vehicle speed > 0), it notifies surrounding road users via out_27.AVAS of reversing or when when driving at a speed below approximately 32 km/h; 2) When switching the driving mode from R to any other or when the vehicle speed is 0 out_27.AVAS is switched off."
+  },
+  {
+    "question": "Does this statement: Acoustic vehicle alert system (AVAS): Use of the pedestrian alert system when driving at speeds below approximately 32 km/h or when reversing comply with the following technical regulation: When the vehicle is driven in drive mode R (vehicle speed > 0), it cannot notify surrounding road users via out_27.AVAS of reversing or when driving at speeds below approximately 32 km/h?",
+    "answer": "No, it does not comply in the part: When the vehicle is driven in drive mode R (vehicle speed > 0), it cannot notify surrounding road users via out_27.AVAS of reversing or when driving at speeds below approximately 32 km/h."
+  }
+]
