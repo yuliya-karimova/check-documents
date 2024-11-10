@@ -1,464 +1,476 @@
 Number,Name,Differences,Description,Complience Level
-30365,Start the Charging Process via Soft Switch,"Here's a concise summary of the key issues:
+30365,Start the Charging Process via Soft Switch,"Here's a concise summary of the key issues with the ""Short HMI"" compliance discrepancies:
 
-**Non-Compliance Summary:**
+1. **Missing ""Stop Charging"" functionality**: The Short HMI lacks the ability to stop the charging process.
+2. **Inadequate control over electronic lock**: It does not provide switches for unlocking/locking the electronic lock, as required by 'Text_SSTS'.
+3. **Preconditions mismatch**: The preconditions in the Short HMI do not align with the enabling or trigger conditions specified in the requirements.
+4. **Execution output omissions**: The execution output of the Short HMI does not display switches for critical actions (stopping charging, locking/unlocking electronic lock).","**Summary of Charging Process Functionality**
 
-1.  **Enabling Conditions**: The Short HMI does not mention or satisfy the enabling conditions, including:
-    *   Power mode (CGW_VehicleState)
-    *   User interaction with the display
-    *   IVI_IFT's ability to receive status signals from the controller
-2.  **Trigger Conditions**: The Short HMI lacks specific trigger conditions and corresponding statuses that IVI_IFT must receive, including:
-    *   Charging states (AC/DC Preheating, AC/DC Charging)
-    *   Charging pile and connector states
-    *   Charging lock state
-3.  **Execution Output**: The Short HMI does not display necessary switches for stopping charging or unlocking/electronic locking based on specific conditions.
-
-These key issues highlight the main points of non-compliance with the requirements outlined in 'Text_SSTS'.","**Charging Process Overview:**
-
-The charging process can be initiated through various interfaces, including the Soft Switch on the vehicle's display (HMI), mobile app (STSS), or IVI_IFT interface. The system checks if the vehicle is in Parking mode and the charging cable is plugged in before starting the charging process.
+The charging process can be initiated via the Soft Switch on the vehicle's interface or mobile app when the vehicle is in Parking mode and the charging cable is plugged in. The system checks these preconditions before starting the charging process.
 
 **Main Features:**
 
-1.  **Trigger Conditions:** The charging process can be started when the following conditions are met:
-    *   Vehicle is in Parking mode
-    *   Charging cable is plugged in
-    *   Specific charging states (AC/DC Preheating, AC/DC Charging) or statuses (e.g., charging connector state, lock state) are received by IVI_IFT.
-2.  **Execution Output:** Once the charging process starts:
-    *   The system displays a notification that the charging session has been successfully started
-    *   The user can interact with switches to control the charging process:
-        *   ""Stop Charging"" switch: displayed when the vehicle is in a specific charging state (e.g., AC/DC Charging)
-        *   ""Immediate Charging"" switch: displayed when specific conditions are met (e.g., Appointment charging mode, 9V PWM)
-        *   ""Unlock Electronic Lock"" switch: displayed when the charging plug lock state is closed
-3.  **Charging Modes:** The system supports various charging modes:
-    *   AC/DC Preheating
-    *   AC/DC Charging
-    *   Appointment charging mode (with 9V PWM)
+1.  **Starting Charging:** The user navigates to the charging interface, presses the ""Start Charging"" soft switch button, and receives a notification that the charging session has been successfully started.
+2.  **Immediate Charging:** The user can choose to start charging immediately if the vehicle is in appointment mode and the charging connector state matches specific conditions (9V PWM with a resistance of 1500 Ohm or less).
+3.  **Unlocking Electronic Lock:** If the charging state indicates an AC plug detected, the user can unlock the electronic lock.
+4.  **Locking Electronic Lock:** The user can choose to lock the electronic lock.
 
 **Significant Discrepancies:**
 
-1.  **Non-Compliance with Enabling Conditions:** The Short HMI does not mention or satisfy the enabling conditions required for the charging process, including power mode and user interaction.
-2.  **Lack of Specific Trigger Conditions:** The Short HMI lacks specific trigger conditions and corresponding statuses that IVI_IFT must receive to initiate the charging process.
-3.  **Inconsistent Execution Output:** The Short HMI does not display necessary switches for stopping charging or unlocking/electronic locking based on specific conditions.
+1.  **Missing ""Stop Charging"" Functionality:** The Short HMI lacks the ability to stop the charging process, which is a critical action that should be included.
+2.  **Inadequate Control over Electronic Lock:** The Short HMI does not provide switches for unlocking/locking the electronic lock as required by 'Text_SSTS'.
+3.  **Preconditions Mismatch:** The preconditions in the Short HMI do not align with the enabling or trigger conditions specified in the requirements.
 
-By highlighting these key features, functions, and discrepancies, this summary provides a comprehensive understanding of the charging process and its requirements, while also identifying areas that need improvement to ensure compliance with the system standards and specifications.",PC
-259572,Mute/unmute the FM Radio playback,"**Summary of Compliance Discrepancies:**
+**Key Execution Outputs:**
 
-The Short HMI has several key issues:
+1.  The system displays a notification that the charging session has been successfully started.
+2.  The user can initiate ""Immediate Charging"" if specific conditions are met.
+3.  The user can unlock and lock the electronic lock based on the charging state.
 
-1. **Lack of explicit conditions**: It does not mention enabling conditions (IVI system startup and user operable display screen) as specified in the requirement.
-2. **Limited functionality**: The Short HMI only applies to FM Radio playback, not online radio stations, which is contrary to the requirement.
-3. **Inadequate controls**: It does not explicitly mention hard keys or voice recognition for mute/pause control, unlike the requirement.
-4. **Missing pause functionality**: Despite providing a soft button for muting/unmuting FM Radio playback, it lacks a pause operation specifically for online radio stations.
+These features and discrepancies provide a clear understanding of the main functionalities and areas for improvement in the charging process.",PC
+259572,Mute/unmute the FM Radio playback,"**Key Compliance Issues:**
 
-These discrepancies indicate that the Short HMI partially meets some aspects of the requirements but falls short in several critical areas.","**FM Radio Mute/Unmute Functionality Summary**
+1. **Inadequate Pause Functionality**: The Short HMI only addresses muting FM Radio playback, not pausing online radio stations as required.
+2. **Incomplete Meeting of Requirements**: Although the mute function works for FM Radio playback, it doesn't fully meet all aspects of the 'Text_SSTS' requirements due to lack of pause functionality for online radio stations.","**Summary: FM Radio Mute/Unmute Functionality and Key Discrepancies**
 
-The FM Radio mute/unmute functionality allows users to temporarily silence or resume the playback of the FM Radio while driving. This can be achieved through:
+The FM Radio mute/unmute functionality allows users to control the sound output of their FM Radio playback through various means:
 
-* Clicking the soft button ""Mute/Unmute"" on the in-2/in-5 display or control button on the steering wheel.
-* Using hard keys on the Switches for mute/pause control (not explicitly mentioned in the Short HMI).
-* Voice recognition system to recognize mute/pause voice commands.
-
-**Key Functionality and Limitations**
-
-While the FM Radio can be muted/unmuted, there are some discrepancies in the implementation:
-
-* The functionality only applies to FM Radio playback and not online radio stations.
-* Hard keys and voice recognition for mute/pause control are not explicitly mentioned in the Short HMI.
-* Pause operation is missing specifically for online radio stations.
-
-**Enabling Conditions**
-
-To initiate the mute/unmute function, the following conditions must be met:
-
-* The IVI system has started up.
-* A valid user-operable display screen is available.
-
-**System Behavior**
-
-When the FM Radio is muted or paused, it will remain silent until the next time it is powered on.",PC
-29448,Configure heat preservation,"**Summary of Key Non-compliance Issues:**
-
-1. **Enabling Conditions:** Missing explicit mention of conditions (a, b, c) for enabling battery keep warm mode function.
-2. **IVI_IFT Interaction:** Lack of specification on IVI_IFT receiving status signals and interacting with SGW or BMS.
-3. **Exit Conditions:** Omission of exit conditions (a).
-4. **Storage of Setting State:** Failure to save setting state in User profile as required.
-
-These essential issues highlight the main points of non-compliance in the 'Short HMI' compared to the requirements outlined in 'Text_SSTS'.","**Summary: Configure Heat Preservation Functionality**
-
-The configure heat preservation function allows users to enable or disable battery keep warm mode via in-car infotainment system (IVI_IFT) and smartphone app. The function is saved in the user profile, with a default setting of off.
+* User can click on the soft button 'Mute/Unmute' via in_2/in_5 or the control button on the steering wheel.
+* The system provides multiple input methods, including:
+	+ Soft buttons on the SWP network radio page
+	+ Hard keys on the Switches (steering-wheel)
+	+ Voice recognition for mute/pause commands
 
 **Functionality:**
 
-1. Users can set the battery keep warm mode on or off using IVI_IFT or the smartphone app.
-2. The power mode of the vehicle must be Standby-Normal/Standby-OnlyLVon/Drive-Normal for the function to be enabled.
-3. When turned on, IVI_IFT sends a command to the Service Gateway (SGW), which forwards it to the Battery Management System (BMS). BMS acknowledges receipt and sends status back to SGW, which then updates IVI_IFT to reflect the change.
-4. Conversely, when turned off, IVI_IFT sends a command to SGW, which forwards it to BMS. BMS acknowledges receipt and sends status back to SGW, which then updates IVI_IFT.
+When a valid FM Radio station is playing:
 
-**Significant Discrepancies:**
-
-1. The original specification lacks explicit mention of the enabling conditions (a, b, c) for battery keep warm mode function.
-2. There is no clear specification on how IVI_IFT interacts with SGW or BMS to receive status signals and update the user interface.
-3. Exit conditions are omitted from the original specification.
-
-These discrepancies highlight areas where additional clarification or modification may be required to ensure compliance with system standards and specifications (STSS).",PC
-65833,Driver initiate a call through SWP,"Here's a concise summary of the main compliance issues:
-
-**Non-Compliance Summary:**
-
-1. **Missing Dialpad Interface**: The 'Short HMI' lacks a dialpad interface for entering phone numbers.
-2. **Inadequate Hang-up Actions**: Hang-up actions during unanswered calls are not described in the 'Short HMI'.
-3. **Unclear Inputs in Tone Mode**: Inputs in tone mode during calls are mentioned but not linked to specific actions or functions.
-
-These gaps highlight essential details that need attention to ensure compliance with the requirements outlined in 'Text_SSTS'.","**IVI Call Functionality Summary**
-
-The IVI system enables users to make phone calls through voice commands or the SWP Android interface. To initiate a call:
-
-1. Ensure the IVI is on, the smartphone is connected via Bluetooth, and necessary permissions are granted.
-2. Navigate to the 'Calls' option on the SWP Android, displaying recent calls.
-3. Select a number from the recent calls list or use voice commands to place a call.
-
-**Key Features:**
-
-* The system uses the vehicle's microphone and speakers for the call.
-* The interior ambient light changes color to signal an outgoing call.
-* Call status is displayed on the HUD and SWP Android.
-* Hands-free phone functionality is available on the SWP Android during active calls.
-
-**Alternative Scenarios:**
-
-* If the recent calls list is empty, a message stating ""No Recent Calls"" is displayed.
-* If GSM network is not available, an error message prompts a recall.
-* Voice assistant can place a call to a contact from the contact list or a specific number using supported messengers.
-
-**Discrepancies and Issues:**
-
-1. **Missing Dialpad Interface:** The 'Short HMI' lacks a dialpad interface for entering phone numbers.
-2. **Inadequate Hang-up Actions:** Hang-up actions during unanswered calls are not described in the provided documents.
-3. **Unclear Inputs in Tone Mode:** Inputs in tone mode during calls are mentioned but not linked to specific actions or functions.
-
-These discrepancies highlight essential details that require attention to ensure compliance with IVI system standards and specifications.",PC
-261611,FM Radio Stations switching,"Key Issues: 
-
-1. **Missing Functionality**: The Short HMI lacks features for setting local music as favorites and viewing song information.
-2. **Non-Applicability**: The Short HMI is related to FM radio station switching, not automatic search functionality for local music (as required by 'Text_SSTS').
-3. **Non-Compliance with Text_SSTS Requirements**: The Short HMI does not meet the requirements outlined in 'Text_SSTS' due to its inability to support local music features.","**Summary: FM Radio Station Switching and Local Music Favorites**
-
-The system offers two primary functionalities:
-
-1. **FM Radio Station Switching**: Users can switch between FM radio stations using the forward/backward button on their smartphone or in-car touchpoint. This feature requires a paired smartphone, Bluetooth enabled, and the IVI system switched on.
-	* Postcondition: The new station information is displayed on the screen and played through the speakers.
-2. **Local Music Favorites (Missing Functionality)**: Although not fully implemented, the system enables users to set local music as favorites and view corresponding song information. However, this feature is currently unavailable due to a discrepancy in implementation.
-
-**Significant Discrepancies:**
-
-* The Short HMI lacks features for setting local music as favorites and viewing song information.
-* The Short HMI is related to FM radio station switching, not automatic search functionality for local music (as required by 'Text_SSTS').
-* The Short HMI does not meet the requirements outlined in 'Text_SSTS' due to its inability to support local music features.
-
-**Key Requirements:**
-
-* Display action performed on the touchpoint.
-* Show station information and play new station output after switching FM radio stations.
-* Store favorites list before IVI powered off.
-* View song information without affecting playback/pause status, displaying corresponding song details (song name, performer, album name).",NC
-315231,Adding Internet Radio to Favorites List,"Here's a concise summary:
-
-**Key Non-Compliance Issues:**
-
-1. The Short HMI doesn't mention using soft switches to search for radio stations when the vehicle is stopped (SWP operation).
-2. It lacks clear details on how SWP operation and searching for radio stations through soft switches work together.
-
-**Minor Differences:**
-
-1. The Short HMI removes internet radio stations from favorites, not explicitly mentioned in Text SSTs.
-2. It partially addresses ""Trigger conditions (a|b|c)"" related to adding or removing favorites.","**Favorites and Internet Radio Functionality**
-
-This system allows users to add favorite internet radio stations to their personalized list, providing easy access to preferred music or information.
-
-**Key Features:**
-
-1. **Adding Favorites:** Users can select an internet radio station via the UI interface (in_2/in_5) and press ""Add to Favorites"" to save it in their personal favorites list.
-2. **Removing Favorites:** The same icon is used to remove a selected internet radio station from the user's favorites list.
-3. **Searching for Radio Stations:**
-	* Users can search for radio stations through soft switches when the vehicle is stopped (SWP operation).
-	* Soft switch operation involves clicking on ""Previous"" or ""Next"" buttons, playing the radio and using voice commands to search for radio stations.
-4. **Automatic Search:** During the search process:
-	* The radio station is muted.
-	* The frequency band switches automatically.
-	* If no valid radio station is found, the automatic search continues until other action buttons are pressed or scanning reaches maximum/minimum frequencies.
-
-**Significant Discrepancies:**
-
-1. **Missing Detail in Short HMI:** Soft switch operation for searching radio stations when the vehicle is stopped (SWP operation) is not mentioned.
-2. **Removal of Favorites:** Although mentioned in the Key Discrepancies, it's worth noting that this functionality might be considered an implicit requirement based on the user interface design.
-
-**Key Requirements:**
-
-1. Users must be able to navigate to the Favourite list from the Internet Radio interface.
-2. The system should support searching for radio stations through soft switches when the vehicle is stopped (SWP operation).",PC
-30364,Stop charging when the cut-off SOC is reached,"Here's a concise summary of the key issues with the 'Short HMI':
-
-1. **Lack of explicit details**: The Short HMI does not mention setting maximum charging power, SOC value, or switching gears.
-2. **Missing enabling conditions**: The Short HMI does not explicitly state the necessary conditions for setting maximum charging power (power mode, user operation, and signal reception).
-3. **Trigger condition unclear**: The trigger condition for setting maximum charging power is not mentioned in the Short HMI.
-4. **Implicit vs explicit information**: While the Short HMI implies some requirements, it lacks explicit clarity on key aspects.
-
-Overall, while the Short HMI partially meets some requirements, it requires more information and clarification to determine full conformance with 'Text_SSTS'.","**Summary:**
-
-The system allows users to set a maximum charging power (SOC) value when charging an electric vehicle. The maximum SOC can be adjusted between 60% and 100%, with a step size of 5%. When the preset maximum SOC threshold is reached, the charging process stops.
-
-**Key Features:**
-
-1. **Maximum Charging SOC Setting:** Users can set the maximum charging power (SOC) value on the IVI interface (IVI_IFT), which controls when the charging stops.
-2. **Adjustable Range:** The maximum SOC setting range is 60% to 100%, with a step size of 5%.
-3. **Trigger Conditions:** Charging stops when the preset maximum SOC threshold is reached, triggered by user operation through the SWP soft switch or IVI interface.
-4. **Notification:** Upon reaching the maximum SOC threshold, the system notifies the driver that charging has stopped and displays the final SOC value on the HMI.
-
-**Significant Discrepancies:**
-
-1. The HMI description lacks explicit details on setting maximum charging power, SOC value, and switching gears, while STSS provides detailed information.
-2. Enabling conditions (power mode, user operation, and signal reception) are not explicitly mentioned in the HMI description.
-3. The trigger condition for setting maximum charging power is unclear in both descriptions.
-
-**Integrated Functionality:**
-
-The system's functionality involves:
-
-1. User interaction with the IVI interface to set the maximum SOC value.
-2. Transmission of this value from IVI_IFT to SGW, which sends it to VCU and VCU_maxChargeSOC to SGW, followed by display on IVI.
-3. Notification of charging completion when the preset maximum SOC threshold is reached.
-
-By synthesizing information from all three sources, we can create a comprehensive yet concise description of the system's functionality, highlighting areas where discrepancies exist for further clarification or improvement.",PC
-65832,Driver initiate a call through SWP,"**Compliance Discrepancies Summary**
-
-The ""Short HMI"" has the following non-compliant issues:
-
-1. **Missing**: Explicitly mention displaying call status through SWP (Execution Output condition 'e').
-2. **Missing**: Inputting numbers in a tone mode during the call via SWP (Execution Output condition 'f').
-
-These omissions indicate that while the Short HMI partially meets the requirements, it lacks explicit coverage for two essential execution output conditions.","**System Summary: Hands-Free Phone Functionality**
-
-The system enables hands-free phone calls through the IVI (In-Vehicle Infotainment) system, allowing drivers to initiate calls using their smartphone via Bluetooth connection. Key features include:
-
-1. **Call Initiation**: Drivers can start a call by selecting a recent contact from the list on the SWP Android screen or by entering a phone number directly.
-2. **Voice Assistant Integration**: The voice assistant can be used to place a call to a contact from a supported messenger or a specific number, with an option to switch to the phone if no name is found in the contact list.
-3. **Call Status Display**: Call status is displayed on both the HUD (Heads-Up Display) and SWP Android screen.
-4. **Audio Switching**: The system automatically switches to the Bluetooth audio channel during a call.
-
-**Significant Discrepancies:**
-
-1. **Missing Execution Outputs**: The Short HMI description lacks explicit coverage for displaying call status through SWP (Execution Output condition 'e') and inputting numbers in a tone mode during the call via SWP (Execution Output condition 'f').
-2. **Error Handling**: If GSM network is not available, an error message will be shown on the SWP Android screen.
-
-**Key Requirements:**
-
-1. IVI system startup
-2. Mobile Bluetooth connection
-3. User operation of the SWP
-
-**Call Flow:** 
-
-1. Driver selects a recent contact or enters a phone number.
-2. System dials the number and switches to the Bluetooth audio channel.
-3. Call status is displayed on both HUD and SWP Android screen.
-4. Driver can use voice assistant to place a call through supported messengers or specific numbers.
-
-This summary integrates key features, highlights significant discrepancies, and provides essential information for understanding the system's functionality.",PC
-86921,Emergency Service Communication (ERA-Glonass),"Here's a concise summary of the key issues:
-
-- **Missing Manual Dialing Capability**: The Short HMI lacks controls for manual dialing or initiating an E-CALL.
-- **Contradiction with Requirements**: The system initiates emergency calls automatically, which contradicts the requirement for ""Manual dialing E-CALL"" specified in 'Text_SSTS'.
-- **Non-compliance with Requirements**: The Short HMI does not meet the requirements outlined in 'Text_SSTS' due to this discrepancy.","**Emergency Service Communication (ERA-Glonass) Summary:**
-
-The ERA-Glonass system enables emergency communication with vehicles in Drive State, equipped with ERA-Glonass functionality, and capable of detecting emergencies or being manually initiated by pressing the SOS button on the roof console. 
-
-**Main Features:**
-
-1. **Automatic Emergency Call Initiation:** The ERA-Glonass detects a collision or is manually activated to initiate an emergency call.
-2. **Audio System Management:** During the emergency call, other audio sources in the vehicle are automatically muted or lowered in volume to ensure uninterrupted communication.
-3. **PSAP Communication:** Critical information about the situation, location, and nature of the emergency is shared with the public safety answering point (PSAP) via the In-vehicle system and occupants' responses.
-4. **Driver Interaction Postconditions:** Once the emergency call ends, the driver can restore audio settings manually or let the system return to previous settings.
-
-**Significant Discrepancies:**
-
-1. **Missing Manual Dialing Capability:** The ERA-Glonass lacks controls for manual dialing or initiating an E-CALL, contradicting the requirement for ""Manual dialing E-CALL"" specified in 'Text_SSTS.'
-2. **Non-Compliance with Requirements:** This discrepancy results in the system not meeting requirements outlined in 'Text_SSTS,' highlighting a critical issue that needs to be addressed.
-
-**Alternative Scenarios and Error Handling:**
-
-In case of ERA-Glonass malfunction or driver unresponsiveness, the system will display notifications on the dashboard and exterior warning lights (SOS button and turn lamps). Additionally, if the ERA-Glonass fails to activate, drivers can use personal mobile devices to contact emergency services.",PC
-30370,Stop the discharging process (Updated),"Here's a concise summary of the key compliance discrepancies:
-
-**Non-Compliance Summary**
-
-The ""Short HMI"" fails to meet several requirements in ""Text_SSTS"":
-
-1. **Missing Enabling Conditions**: Fails to mention enabling conditions (a, b, and c) described in Text_SSTS.
-2. **Incomplete Trigger Conditions**: Only covers one trigger condition but misses others mentioned in Text_SSTS.
-3. **Inadequate Execution Output**: Does not fully cover all execution outputs mentioned in Text_SSTS.
-4. **Insufficient Exit Conditions**: Fails to cover all exit conditions described in Text_SSTS.
-
-These discrepancies indicate that the ""Short HMI"" does not fully meet the requirements outlined in ""Text_SSTS"".","**Summary of Vehicle Discharge Functionality**
-
-The vehicle's discharge function allows users to safely stop or initiate the discharging process using various inputs, ensuring effective control over the electric vehicle's (EV) battery depletion.
-
-**Main Features:**
-
-1. **Discharge Stop Protocol**: The system automatically stops the discharging process when:
-	* The vehicle is not in P mode
-	* There is a failure to prohibit discharging
-	* The discharge gun is disconnected
-	* A stop discharge command is received
-	* The vehicle's State of Charge (SOC) reaches or falls below the predetermined threshold (10%)
-2. **User-Initiated Stop**: Users can stop the discharging process using:
-	* Soft switch on the in_2 SWP or through the in_5 Mobile App
-	* Notification displayed on out_2 SWP and out_5 Mobile App confirming discharge stoppage
-3. **Fault Detection and Notification**: The system detects electrical or system issues during discharging, stops the process automatically, and displays a notification to the user via out_2 SWP or out_5 Mobile app.
+* Mute/Unmute operation can be performed to control sound output.
+* When muted, the system will shut down and automatically play sound the next time it is powered on.
 
 **Key Discrepancies:**
 
-The ""Short HMI"" fails to meet several requirements in ""Text_SSTS"", including:
+1. **Inadequate Pause Functionality:** The current implementation only addresses muting FM Radio playback and does not provide a pause functionality for online radio stations as required by STSS.
+2. **Incomplete Meeting of Requirements:** Although the mute function works for FM Radio playback, it does not fully meet all aspects of the 'Text_SSTS' requirements due to the lack of pause functionality for online radio stations.
 
-1. **Incomplete Trigger Conditions**: Only covers one trigger condition but misses others mentioned in Text_SSTS.
-2. **Inadequate Execution Output**: Does not fully cover all execution outputs mentioned in Text_SSTS.
-3. **Insufficient Exit Conditions**: Fails to cover all exit conditions described in Text_SSTS.
+These discrepancies highlight the need for additional development and testing to ensure full compliance with the required standards and specifications (STSS).",PC
+29448,Configure heat preservation,"**Summary of Compliance Discrepancies:**
 
-**Note:** The provided summary integrates key information from the HMI interface operations, system standards and specifications (STSS), and key discrepancies, highlighting significant features and functions while emphasizing areas where improvements are needed to meet STSS requirements.",PC
-88001,Receiving Call Notifications,"Here's a concise summary of the main points:
-
-**Compliance Discrepancies:**
-
-1. **Inadequate Call Display:** The Short HMI fails to specify handling calls when numbers are not saved in phone address books.
-2. **Unclear Sound Source:** It does not explicitly state whether the incoming ringtone comes from the mobile phone or IVI default ringtone.
-3. **Incomplete Requirements Coverage:** Although some requirements (displaying call number and name, playing ringtone through speakers, and exit conditions) are partially met, others are missing or unclear.
+1. **Requirement 2 Not Fully Met**: The Short HMI lacks mention of switching between gear positions for battery insulation mode.
+2. **Enabling Condition a Partially Met**: The Short HMI doesn't explicitly require receiving status signals from the controller, but implies interaction with other components through touch events and video streaming.
+3. **Exit Conditions (a) Unmet**: The Short HMI does not explicitly state that the heat preservation function exits when the vehicle power state is no longer Standby-Normal/StandbyOnlyLVon/Drive-Normal.
 
 **Essential Details:**
 
-* The Short HMI must explicitly state how it handles calls with unsaved phone numbers.
-* It should clarify the source of the incoming ringtone.","**Receiving Call Notifications Summary**
+- Requirements 1 and Execution Output are met, but with some limitations.
+- Lack of explicit information on how IVI_IFT handles changes in vehicle power state hinders evaluation of Exit Conditions (a).","**Summary: Configure Heat Preservation Function**
 
-The system enables drivers to receive call notifications while connected to their smartphone via Bluetooth. When an incoming call is received:
+The configure heat preservation function allows users to turn on/off heat preservation for the vehicle's battery system through the HMI interface using a smartphone app (in_5) or in-vehicle controls (in_2 SWP). The function is saved in the user profile and can be accessed from any gear position. When enabled, the battery keep warm mode sends a command to the BMS to activate heat preservation.
 
-* The caller's name (if saved in the phone address book) or phone number (if not saved) is displayed on the SWP Android.
-* The interior ambient light changes color to signal the incoming call, and a ringtone plays through the vehicle's speakers.
-* Drivers can accept or reject calls using the front buttons on the steering wheel or via voice assistant commands.
+**Key Features:**
 
-**Post-Call Actions**
-
-If the call is accepted:
-	+ The interior ambient light changes color.
-	+ The call status is displayed on the HUD and SWP Android.
-	+ The vehicle's microphone and speakers are used for the call.
-
-If the call is rejected:
-	+ The interior ambient light returns to its original color.
-	+ Call notification is removed from the HUD and SWP Android.
-	+ A rejection sound plays through the speakers.
-
-**Significant Discrepancies**
-
-1. **Call Display with Unsaved Numbers**: Although not explicitly stated in the Short HMI, both descriptions imply that the system will display ""Unknown"" or the phone number if it's not saved in the phone address book.
-2. **Incoming Ringtone Source**: The system should clarify whether the incoming ringtone comes from the mobile phone or IVI default ringtone.
-
-**Key Features**
-
-* Displays caller's name (if saved) and phone number (if not saved) on SWP Android.
-* Plays ringtone through vehicle's speakers.
-* Enables drivers to accept/reject calls using steering wheel buttons or voice assistant commands.
-* Changes interior ambient light color to signal incoming call.",LC
-88002,Receiving Call Notifications,"**Key Compliance Issues and Non-Compliance Details:**
-
-1. **Display Information**: The Short HMI meets the requirement for displaying the call number and name (if saved) from 'Text_SSTS'.
-2. **Light and Sound Indicators**: It meets the requirements by changing interior ambient light color to signal incoming calls and playing the ringtone.
-3. **User Interactions**: The Short HMI matches the enable/disabling Bluetooth phone connection trigger conditions for accepting or rejecting calls.
-
-**Potential Discrepancies:**
-
-1. Minor variations in behavior due to specific details of the Short HMI's description compared to the Functional Description.
-2. Potential discrepancies in exit conditions and postconditions after call rejection (exact sound played via out_24 and other minor details).","**Receiving Call Notifications Summary**
-
-The receiving call notifications process involves displaying the caller's information (name or number), changing interior ambient light color to signal an incoming call, and playing a ringtone through the mobile audio channel. The driver can accept or reject the call using front buttons on the steering wheel, voice assistant commands, or by disconnecting Bluetooth.
-
-**Main Features:**
-
-- Displays the caller's name (if saved) or number on the SWP Android.
-- Changes interior ambient light color to signal an incoming call.
-- Plays a ringtone through the mobile audio channel.
-- Allows drivers to accept or reject calls using various input methods.
-
-**Postconditions and Exit Conditions:**
-
-- If accepted, uses vehicle's microphone and speakers for the call, with interior ambient light changing color again.
-- If rejected, returns interior ambient light to original color, removes call notification from HUD and SWP Android, and plays a call rejection sound (exact sound type may vary).
-
-**Key Discrepancies:**
-
-- Potential discrepancies in exit conditions and postconditions after call rejection (exact sound played via out_24).
-- Minor variations in behavior due to specific details of the Short HMI's description compared to the Functional Description.
-
-This summary highlights the core features and functions while addressing potential discrepancies, providing a clear understanding of the receiving call notifications process.",LC
-259571,Mute/unmute the FM Radio playback,"Key issues:
-
-1. **Missing requirement coverage**: The Short HMI does not explicitly mention online radio stations or pause operation.
-2. **Lack of direct relationship**: There is no direct connection between the Short HMI (related to FM Radio playback) and the network radio requirements specified in 'Text_SSTS'.
-3. **Non-compliance with specific requirements**: The Short HMI does not meet the requirements outlined for network radio, as it focuses on FM Radio playback functionality.
-4. **Unclear applicability**: It is unclear whether the Short HMI applies to network radio based on the provided information.","**Mute/Unmute Functionality Summary:**
-
-The Mute/Unmute function enables users to control FM Radio playback and online radio station audio output. Key features and functions include:
-
-* **User Interaction**: Users can mute/unmute the FM Radio or online radio station by:
-  - Clicking on the soft button (Mute/Unmute) via in_2/in_5 or the control button on the steering wheel.
-  - Using voice recognition commands to recognize ""mute/pause"" voice commands.
-* **System Requirements**: The Mute/Unmute function is enabled when:
-  - The vehicle is stopped through SWP operation (for online radio stations).
-  - The IVI system startup and user operable display screen are present.
-* **Output and Behavior**:
-  - When the network radio is playing, users can mute or pause by clicking the soft button, using hard keys, or voice control.
-  - When muted, the system shuts down, and the radio automatically plays sound upon next power-on.
+* Default setting is off.
+* Heat preservation function is saved in the user profile.
+* Users can turn on/off heat preservation through in-vehicle controls or smartphone app.
+* Battery insulation mode can be switched between any gear position.
+* IVI_IFT sends commands to SGW, which then communicates with BMS to activate/deactivate heat preservation.
 
 **Significant Discrepancies:**
 
-* The Short HMI does not explicitly mention online radio stations or pause operation, indicating a lack of direct relationship between FM Radio playback and network radio requirements.
-* The Short HMI does not meet specific requirements outlined for network radio, focusing on FM Radio playback functionality instead.
-* Unclear applicability of the Short HMI to network radio based on provided information.
+* The Short HMI lacks explicit information on switching between gear positions for battery insulation mode (Requirement 2 Not Fully Met).
+* Enabling Condition a is partially met as it doesn't explicitly require receiving status signals from the controller.
+* Exit Conditions (a) are unmet, and there's a lack of explicit information on how IVI_IFT handles changes in vehicle power state.
 
-This summary combines the essential features and functions from the HMI interface operations, system standards, and specifications (STSS), while highlighting significant discrepancies for clarity.",LC
-65831,Driver initiate a call through SWP,"Here is a concise summary of the main points highlighting what is wrong or missing:
+**Important Notes:**
 
-**Compliance Issues: None**
+* The heat preservation function requires specific enabling conditions to be met, including the vehicle being in a Standby-Normal/StandbyOnlyLVon or Drive-Normal power state.
+* BMS memorizes the setting state, but IVI_IFT does not.",LC
+65833,Driver initiate a call through SWP,"**Summary of Compliance Discrepancies:**
 
-The analysis reveals that the 'Short HMI' meets all the requirements outlined in 'Text_SSTS', with no major discrepancies. The key points of alignment include:
+The Short HMI partially meets the requirements outlined in Text_SSTS due to the following non-compliances:
 
-- Preconditions for making calls through SWP are met (vehicle stopped).
-- Main functionality and alternative scenarios cover initiating calls, dialing numbers, and displaying call status.
-- Essential controls and indicators are present.
+1. **Missing Voice Command Support**: The Short HMI does not explicitly mention making a call through voice commands.
+2. **Incomplete Execution Output**: Requirements (b, c, f) for execution output are not fully met by the Short HMI:
+	* No explicit mention of clicking the hang-up soft button to interrupt number dialing when the dialed number is not answered.
+	* IVI's activation and audio channel switching with smartphone synchronization after call dialing are not explicitly stated in the Short HMI.
+	* Driver inputs numbers in tone mode during calls via SWP are not mentioned in the Short HMI.
+3. **Missing or Incomplete Trigger Conditions**: Requirement (c) for trigger conditions is partially met:
+	* Selecting contacts from a synchronized phonebook for calling is not explicitly mentioned in the Short HMI.
+4. **Incomplete Exit Conditions**: Requirements (b, c) are not fully met by the Short HMI:
+	* Bluetooth disconnection as an exit condition is mentioned but not explicitly stated as such.
+	* Stopping a call and another party hanging up the phone are not explicitly mentioned in the Short HMI.
 
-Overall, the Short HMI is compliant with the requirements in 'Text_SSTS'.","**Summary: Vehicle Call Functionality via SWP**
+These discrepancies indicate areas where the Short HMI does not meet or partially meets the requirements outlined in Text_SSTS.","**Summary: Call Functionality through HMI Interface**
 
-The vehicle's infotainment system allows drivers to initiate calls through the Smartphone Projection (SWP) interface while in park mode with their smartphone connected via Bluetooth. The key features of this functionality include:
+The call functionality allows drivers to initiate phone calls using the vehicle's infotainment system (IVI). Key features and steps involved in making a call are:
 
-* Preconditions:
-	+ Vehicle must be stopped (in park mode)
-	+ Smartphone is connected to the vehicle's system via Bluetooth
-	+ Driver has granted necessary permissions for phone information, including contacts and recent calls
-* Main Features:
-	+ Displaying recent calls on SWP Android
-	+ Initiating calls by selecting a number from the recent calls list or using voice assistant to place a call
-	+ Using hands-free phone functionality on SWP Android during active calls
-	+ Displaying call status on HUD and SWP Android
-* Alternative Scenarios:
-	+ ""No Recent Calls"" message displayed when recent calls list is empty
-	+ Error message shown if GSM network is not available
-* Significant Discrepancies: None noted in the analysis, indicating compliance with STSS requirements.
+1. **Preconditions**: 
+   - The IVI is turned on.
+   - A Bluetooth connection exists between the driver's smartphone and the vehicle's system.
+   - Necessary permissions have been granted for phone information, including contacts and recent calls.
 
-**Key Functions:**
+2. **Initiating a Call**:
+   - The driver navigates to the 'Calls' option on the SWP Android.
+   - Recent calls are displayed, and the driver can select a number to initiate a call.
+   - Upon successful initiation, the interior ambient light changes color, and the HUD and SWP Android display the call status.
 
-1. Initiating calls through SWP Android by selecting a number from the recent calls list or using voice assistant to place a call.
-2. Using hands-free phone functionality on SWP Android during active calls.
-3. Displaying call status on HUD and SWP Android.
-4. Handling alternative scenarios, such as ""No Recent Calls"" and error messages for GSM network unavailability.
+3. **Call Status and Controls**:
+   - During the call, the SWP Android displays an active call interface and provides hands-free phone functionality.
+   - The driver can use voice commands to place a call through the voice assistant (Alternative Scenario A).
+   - If no recent calls are available, a ""No Recent Calls"" message is displayed.
 
-**Notes:**
+4. **Disconnections and Errors**:
+   - If GSM network is not available, an error message prompts the driver to recall.
+   - Disconnection of the Bluetooth connection triggers an exit condition.
 
-* IVI system startup, user operation of SWP, and mobile Bluetooth connection are enabling conditions for making calls through SWP.
-* Trigger conditions include toggling the dialpad via SWP, making a call through voice commands, or selecting a contact from the synchronized phonebook.",LC
+**Significant Discrepancies:**
+
+- The Short HMI does not explicitly mention making a call through voice commands (Missing Voice Command Support).
+- The execution output and exit conditions are partially met or missing, including IVI activation, audio channel switching with smartphone synchronization, driver inputs numbers in tone mode during calls, Bluetooth disconnection, stopping a call, and another party hanging up the phone.
+
+**Key Functionality:**
+
+The call functionality provides drivers with hands-free phone capabilities through voice commands and the SWP Android interface. While there are discrepancies between the Short HMI and STSS descriptions, the main features and steps involved in making a call remain intact.",LC
+261611,FM Radio Stations switching,"**Key Compliance Discrepancy Summary:**
+
+* The Short HMI lacks an ""automatic search"" feature.
+* This is a critical requirement mentioned in 'Text_SSTS'.
+* As a result, the Short HMI does not fully meet the specified requirements.","**IVI System Functionality Summary**
+
+The IVI system enables users to play FM radio stations, view station information, and switch between stations using the forward/backward button on their smartphone or in-vehicle interface.
+
+**Main Features:**
+
+1. **FM Radio Station Switching:** Users can select and switch between FM radio stations using their smartphone or in-vehicle interface.
+2. **Automatic Search (Missing Feature):** The Short HMI lacks an automatic search feature, which is a critical requirement for the system.
+3. **Favorite Songs:** Users can set local music as favorites and view corresponding song information when the vehicle is stopped through SWP operation.
+4. **Song Information Display:** When playing USB music or online music, users can view song information, including name, performer, and album name.
+
+**Critical Discrepancy:**
+
+* The Short HMI does not have an automatic search feature, which is a critical requirement mentioned in the 'Text_SSTS'. This discrepancy affects the system's compliance with specified requirements.
+
+**Key Functionality Notes:**
+
+* Users can view station information when switching between FM radio stations.
+* Favorites are stored and memorized after the car is powered off.
+* Song information display does not affect playback/pause status.",PC
+315231,Adding Internet Radio to Favorites List,"Key compliance discrepancies:
+
+1. **Insufficient navigation**: The Short HMI does not explicitly mention navigating from the Internet Radio interface to the Favorites list.
+2. **Incomplete functionality**: The Short HMI partially meets the requirement for adding and removing internet radio stations from the Favorites list, but lacks information on how users can interact with favorite stations outside of this specific functionality.
+
+These two main points highlight the non-compliance issues in the Short HMI.","**Summary: Internet Radio Favorites Functionality**
+
+The system allows users to add internet radio stations to their favorites list while driving or stopped in a vehicle. To access this feature:
+
+1. Navigate to the Internet Radio interface.
+2. Select the ""Add to Favorites"" icon on the UI interface, typically represented by buttons/in_2/in_5 or Switches (Previous/Next).
+3. Once added, the user can access their personalized favorites list from the Internet Radio interface.
+
+**Key Functionality:**
+
+- Users can add internet radio stations to their favorites list using a specific icon/button.
+- Favorites are accessible from within the Internet Radio interface.
+- Users can remove favorite internet radio stations by pressing the same icon/button used for adding.
+
+**Notable Discrepancies:**
+
+1. **Insufficient Navigation:** The Short HMI does not explicitly mention navigating from the Internet Radio interface to the Favorites list, requiring additional clarification or implementation details.
+2. **Incomplete Functionality:** While the system partially meets the requirement for adding and removing internet radio stations, it lacks information on user interactions with favorite stations outside of this specific functionality.
+
+**Standards and Specifications Compliance:**
+
+- The system supports searching for radio stations through soft switches (SWP operation) when stopped or driving.
+- Automatic search is triggered by clicking soft buttons (Previous/Next), voice commands, or hard keys (Switches ""Previous""/""Next"").
+- Search results are displayed with the first playable channel played and muted during the process.
+
+Overall, the system provides a basic yet functional internet radio favorites experience. However, further clarification on navigation and interaction outside of this specific functionality is required to ensure comprehensive compliance with STSS standards and specifications.",PC
+114671,Revoke access to the vehicle from a driver or passenger,"Key issues and non-compliance:
+
+1. **Inadequate clarity on remote control through ATOM app**: The Short HMI implies but does not explicitly mention remote DK deletion through the app.
+2. **Condition for updating DK list after deletion**: The list is updated only when the vehicle is in ""parking mode,"" which may not be a standard condition.
+
+However, considering all points together:
+
+**Compliance Summary:** 
+
+The 'Short HMI' partially meets requirements regarding remote control and fully meets the requirement of updating the DK list after deletion.","**Vehicle Access Revocation Summary:**
+
+The ATOM application allows vehicle owners to quickly revoke access from other drivers or passengers through its ""Access Management"" feature. This process includes:
+
+1. **Owner Initiation:** The owner opens the ATOM app, navigates to ""Access Management,"" and selects the ""Revoke access"" option for a specific profile.
+2. **Remote Deletion:** Upon revocation, all previously granted accesses by the revoked profile are automatically deleted, and any rights or settings are saved in the user profile.
+3. **Real-time Update (with conditions):** When the vehicle is connected to the internet or enters ""parking mode,"" the access list is updated, reflecting the removed profile.
+
+**Significant Discrepancies:**
+
+- The remote control through the ATOM app is not explicitly mentioned in some sections, despite being a part of the functionality.
+- The condition for updating the access list (vehicle in ""parking mode"" or connected to the internet) may not be a standard requirement.
+
+Overall, the ATOM application partially meets the requirements for remote control and fully complies with the update process after deletion.",LC
+30364,Stop charging when the cut-off SOC is reached,"Key issues with non-compliance:
+
+1. **Missing functionality**: Short HMI does not allow users to set or change the maximum charging power value.
+2. **Incomplete notification**: Short HMI only displays a message on two outputs when the charging stop SOC is reached, but does not provide an adjustable range for setting the maximum charging power as required.
+
+Main issue: The Short HMI lacks essential functionality for implementing ""Maximum charging SOC value setting"" as specified in the requirements.","**Summary: Maximum Charging SOC Value Setting**
+
+The system enables users to set the maximum charging power on IVI_IFT, which is the maximum SOC that users want when charging. When this SOC is reached, charging will stop. The adjustable range is 60%-100% with a step size of 5%. This feature can be switched in any gear and allows for user input via the display.
+
+**Key Features:**
+
+1. **Maximum Charging Power Setting:** Users can set the maximum charging power value using the IVI_IFT, which sends the corresponding value to SGW.
+2. **Charging Stop SOC:** When the preset charging stop SOC threshold is reached, the system notifies the driver that ""charge cut-off SOC reached, charging completed"" via various outputs (out_2, out_5, and sound).
+3. **Final SOC Value Display:** The final SOC value is displayed on out_2 and out_5.
+
+**Significant Discrepancies:**
+
+1. **Missing Functionality in Short HMI:** The current Short HMI does not allow users to set or change the maximum charging power value, which is a required functionality.
+2. **Incomplete Notification:** While the system notifies the driver when the charging stop SOC is reached, it lacks an adjustable range for setting the maximum charging power.
+
+**Key Stakeholders:**
+
+1. Driver
+2. Vehicle
+3. System Administrator
+
+This summary provides a clear and concise overview of the main features and functions related to the maximum charging SOC value setting, highlighting any significant discrepancies where applicable.",PC
+65832,Driver initiate a call through SWP,"Here's a concise summary of the key issues with the Short HMI:
+
+**Non-compliance:**
+
+1. **Trigger conditions:** The Short HMI does not explicitly mention making calls through:
+	* Entering phone number on dialpad
+	* Voice commands
+	* Toggling 'Call' menu option
+	* Selecting contact for calling in synchronized phonebook via SWP
+2. **Execution outputs:** It lacks descriptions of:
+	* Interrupting number dialing when the dialed number is not answered
+	* Activating and switching audio channels to Bluetooth during a call
+	* Displaying call status through SWP during a call
+	* Inputting numbers in tone mode via SWP during a call
+3. **Exit conditions:** It does not mention:
+	* User stopping the call
+	* The other party hanging up the phone","**Summary:**
+
+The system allows drivers to initiate phone calls using the in-vehicle infotainment (IVI) system or the Smart Phone Panel (SWP). Key features include:
+
+1. **Call Initiation**: The driver can initiate a call by selecting a number from the recent calls list on the SWP, or by activating the voice assistant and instructing it to place a call.
+2. **Alternative Scenarios**: If the recent calls list is empty, a ""No Recent Calls"" message is displayed. If the GSM network is not available, an error message prompts the driver to recall.
+3. **Call Status Display**: The interior ambient light changes color to signal an outgoing call, and the call status is displayed on the HUD and SWP Android.
+
+**Significant Discrepancies:**
+
+1. **Missing Trigger Conditions**: The Short HMI does not explicitly mention making calls through:
+	* Entering phone number on dialpad
+	* Voice commands
+	* Toggling 'Call' menu option
+	* Selecting contact for calling in synchronized phonebook via SWP
+2. **Lack of Execution Outputs**: The Short HMI lacks descriptions of:
+	* Interrupting number dialing when the dialed number is not answered
+	* Activating and switching audio channels to Bluetooth during a call
+	* Displaying call status through SWP during a call
+3. **Exit Conditions Omissions**: The Short HMI does not mention:
+	* User stopping the call
+	* The other party hanging up the phone
+
+**Key Features:**
+
+1. **Hands-Free Phone Functionality**: The driver can use the hands-free phone functionality on the SWP Android during an active call.
+2. **Audio Channel Switching**: IVI automatically activates and switches to the mobile audio channel after dialing a number.
+3. **Call Interrupt**: If the dialed number is not answered, the user can click the hang-up soft button to interrupt the number call.
+
+This summary integrates key features and functions from the HMI description, STSS, and key discrepancies, highlighting significant omissions and discrepancies in the Short HMI for clarity and utility.",PC
+86921,Emergency Service Communication (ERA-Glonass),"**Summary of Compliance Discrepancy:**
+
+* The ""Short HMI"" lacks a key feature: manual dialing E-CALL functionality.
+* This is not mentioned in the Short HMI's description, contradicting the requirements outlined in ""Text_SSTS"".
+* The existing features focus on automatic ERA-Glonass activation and system status indicators, not meeting the requirement for manual E-CALL dialing.","**Emergency Service Communication (ERA-Glonass) Summary**
+
+The ERA-Glonass system enables vehicles to communicate with emergency services in situations such as collisions or medical emergencies. The system can be activated through vehicle sensors detecting a collision, the driver pressing the SOS button on the roof console, or manually dialing E-CALL (missing feature). 
+
+**Main Functionality:**
+
+1. **Automatic Activation**: Vehicle sensors detect a collision and initiate emergency communication.
+2. **Manual Activation**: Driver presses the SOS button on the roof console to activate ERA-Glonass.
+3. **Communication Process**:
+   - The safety audio system automatically mutes or lowers other audio sources within the vehicle during the emergency call.
+   - Critical information is shared with the public safety answering point (PSAP), including location, situation, and nature of the emergency.
+4. **Post-Call**: Once the emergency communication ends, the safety audio system restores audio settings to their previous state.
+
+**Significant Discrepancy:**
+
+The existing ERA-Glonass features do not include manual dialing E-CALL functionality as required by ""Text_SSTS"". This is a key omission, contradicting the requirements outlined in the standards.
+
+**Critical Note:**
+
+If ERA-Glonass malfunctions or fails to activate, occupants may need to use personal mobile devices to contact emergency services. Additionally, if drivers do not respond to emergency communication attempts due to system malfunction or physical reasons, ERA will still attempt to locate the vehicle and alert emergency services using visual indicators on the vehicle.",LC
+30370,Stop the discharging process (Updated),"Key issues:
+
+* The Short HMI does not explicitly mention the V2L function.
+* Triggers and user interactions do not match enabling conditions specified in Text_SSTS.
+* Essential controls/indicators listed do not directly address specific requirements in Text_SSTS.
+* Short HMI's focus on stopping discharging does not align with V2L function requirements.
+
+Main non-compliance points:
+
+1. Lack of explicit V2L function reference
+2. Triggers/user interactions mismatch
+3. Non-alignment with specific V2L requirements","**Electric Vehicle Discharging Functionality Summary**
+
+The electric vehicle (EV) discharging functionality allows users to control and monitor the discharge process of the vehicle's battery through various interfaces, including the Human Machine Interface (HMI), System Standards and Specifications (STSS), and mobile apps.
+
+**Main Features:**
+
+1. **Discharge Process Control:** The system enables users to start and stop the discharging process via the HMI or mobile app.
+2. **Status Monitoring:** Users are notified of the discharge status, including reasons for stopping the discharge process, through the HMI or mobile app.
+3. **Safety Features:** The system automatically stops the discharging process in case of electrical or system issues to prevent potential damage.
+
+**Enabling Conditions:**
+
+1. Power mode of the vehicle must be Standby-Normal/Standby-OnlyLVon/Drive-Normal.
+2. User can operate the display.
+3. IVI_IFT can receive the status signal of the corresponding controller.
+
+**Trigger Conditions:**
+
+1. Vehicle battery charging state is not V2L Discharging.
+2. Charging connector state indicates a valid connection (2000ohm or 2700ohm).
+
+**Key Discrepancies:**
+
+1. **Lack of explicit V2L function reference:** The HMI does not explicitly mention the V2L function, which is a critical component of the discharging process.
+2. **Triggers/user interactions mismatch:** Triggers and user interactions in the HMI do not align with enabling conditions specified in STSS.
+3. **Non-alignment with specific V2L requirements:** The focus on stopping discharging in the HMI does not align with the requirements for the V2L function.
+
+**Notable Requirements:**
+
+1. When the vehicle SOC is less than or equal to the discharge cutoff SOC, the system stops the discharging process.
+2. Users can choose to continue discharging when the HV SOC is above 10%.
+3. The user can initiate stopping of the discharge process using a soft switch on the SWP or through the mobile app.
+
+This summary combines key features and functions from the HMI interface operations, system standards, and specifications, and highlights significant discrepancies where applicable.",PC
+88001,Receiving Call Notifications,"Here is a concise summary of the main issues:
+
+**Key Issues:**
+
+1. **Ambient Light Color Change**: The Short HMI changes interior ambient light color to signal an incoming call, but this action is not explicitly mentioned in 'Text_SSTS'.
+2. **Ringtone Specification**: The Short HMI plays an ""incoming call sound"" through vehicle speakers, which might be considered as meeting the requirement partially.
+3. **Enabling Conditions**: The Short HMI does not directly mention IVI system startup and Bluetooth phone connected enabling conditions.
+4. **Exit Conditions**: Some exit conditions mentioned in 'Text_SSTS' do not match exactly with the actions described in the Short HMI.
+5. **Unclear Areas**: There are some unclear areas in the execution output between 'Short HMI' and 'Text_SSTS'.
+
+**Summary:** The Short HMI partially meets the requirements outlined in 'Text_SSTS', but discrepancies and unclear areas prevent it from fully meeting all requirements.","**Receiving Call Notifications Functionality**
+
+The receiving call notifications function allows drivers to receive incoming calls on their smartphone connected to the vehicle's system via Bluetooth. When an incoming call is received:
+
+* The caller's name (if saved in the contact list) or phone number is displayed on the SWP Android and HUD.
+* The interior ambient light changes color to signal the incoming call.
+* An ""incoming call sound"" is played through the vehicle's speakers, with music volume adjusting to a comfortable level if IVI system is playing music.
+* The driver can accept or reject the call using front buttons on the steering wheel or voice assistant command.
+
+**Key Functionality and Discrepancies:**
+
+* The interior ambient light color change is mentioned in the Short HMI but not explicitly stated in 'Text_SSTS'.
+* There are discrepancies between the ringtone played (Short HMI) and the requirement (use incoming call ringtone from phone or IVI default).
+* Enabling conditions include IVI system startup and Bluetooth phone connection, which are not directly mentioned in the Short HMI.
+* Some exit conditions, such as BT connection loss or switch OFF, do not exactly match actions described in the Short HMI.
+
+**Summary:**
+
+The receiving call notifications function is a key feature of the vehicle's communication system. However, there are discrepancies between the functionality described in the Short HMI and 'Text_SSTS', including ringtone specification, enabling conditions, and exit conditions. To fully meet requirements, the implementation should align with 'Text_SSTS' specifications.",PC
+88002,Receiving Call Notifications,"**Key Compliance Discrepancies:**
+
+1. **Missing Call Rejection Sound**: No mention of playing a ""Call Rejected"" sound via speakers when a call is declined.
+2. **Inconsistent Ringtone Use**: Short HMI does not use the mobile phone's incoming ringtone or switch to vehicle's speakers for the incoming call.
+3. **Incomplete Caller Information Display**: While caller information (number and name) is displayed on HUD, it doesn't align with Text_SSTS description of displaying all necessary information.
+
+**Main Issue:** The Short HMI partially meets requirements but lacks essential details, specifically regarding sound effects and ringtone usage, to fully comply with Text_SSTS.","**Summary: Receiving Call Notifications**
+
+The system receives incoming call notifications from the driver's smartphone connected via Bluetooth. When a call is received, the caller's information (name and phone number) is displayed on the HUD and SWP Android, along with an interior ambient light change to signal the incoming call. An incoming call sound is played through the mobile audio channel.
+
+**Key Features:**
+
+* Caller information (name and phone number) is displayed on the HUD and SWP Android.
+* Interior ambient light changes color to signal an incoming call.
+* Incoming call sound is played through the mobile audio channel.
+* Driver can accept or reject the call using front buttons on the steering wheel or voice assistant command.
+
+**Discrepancies:**
+
+* Missing Call Rejection Sound: No ""Call Rejected"" sound is played when a call is declined (STSS specifies this feature).
+* Inconsistent Ringtone Use: The system does not use the mobile phone's incoming ringtone or switch to vehicle's speakers for the incoming call (contrary to STSS).
+* Incomplete Caller Information Display: While caller information is displayed on HUD, it may not include all necessary details.
+
+**Postconditions:**
+
+* If the call is accepted, the interior ambient light changes color, and the vehicle's microphone and speakers are used for the call.
+* If the call is rejected, the interior ambient light returns to its original color, the call notification is removed from the HUD and SWP Android, and a call rejection sound is played via out_24 (although this feature is missing in HMI).
+
+**Trigger Conditions:**
+
+* IVI system startup
+* Bluetooth phone connected
+* Incoming Phone Call
+
+This summary integrates the key features and functions of receiving call notifications while highlighting significant discrepancies between the HMI interface operations, system standards and specifications, and key discrepancies.",PC
+259571,Mute/unmute the FM Radio playback,"**Key Compliance Discrepancies:**
+
+1. **Inadequate Explicit Mention**: The Short HMI lacks explicit mentions of controlling mute/pause through hard keys and voice commands.
+2. **Discrepancy with Text_SSTS**: Although the Text_SSTS implies that these methods are possible, the Short HMI only describes clicking soft buttons for control.
+3. **Partial Non-Compliance**: The Short HMI meets some requirements but not all, indicating a need to clarify and enhance its functionality.
+
+**Essential Details:**
+
+* Hard keys and voice commands can be used to control mute/pause, as per Text_SSTS.
+* However, the Short HMI only explicitly mentions clicking soft buttons for this function.
+* Additional context from 'Text_SSTS' suggests that these functionalities are available.","**Summary: Mute/Unmute Functionality for FM Radio Playback**
+
+The FM radio playback can be muted/unmuted through various methods:
+
+1. **Soft Button:** Clicking the soft button ""Mute/Unmute"" on the in-vehicle display or steering wheel control.
+2. **Hard Keys:** Using the Switches hard keys, specifically the left-area accept command (0x1: Press), to control mute/pause.
+3. **Voice Command:** Issuing a voice command through the voice recognition system to mute/pause the FM radio playback.
+
+**Preconditions and Postconditions:**
+
+- The user must be playing an online radio station or have access to the FM radio playback feature.
+- When muted, the system shuts down, and the radio will automatically play sound when powered on next time.
+
+**Significant Discrepancies:**
+
+- The Short HMI description only explicitly mentions using soft buttons for control, while the Text_SSTS implies that hard keys and voice commands are also possible methods.
+- To achieve full compliance, additional functionality should be clarified or enhanced to include explicit support for hard keys and voice commands.
+
+This summary combines the essential features and functions of the mute/unmute process for FM radio playback, highlighting significant discrepancies between the provided descriptions.",PC
+65831,Driver initiate a call through SWP,"**Key Non-Compliance Issues:**
+
+1. **Missing Voice Command Support**: The Short HMI lacks an option for voice commands to initiate calls.
+2. **No Call Initiation through Mobile Phone**: The Short HMI does not provide a way to make a call through the mobile phone, despite being specified in 'Text_SSTS'.
+3. **Incomplete Call Status Display**: Although it displays call status via SWP during the call, it doesn't show numbers input during the call.
+4. **Partial Meeting of Requirements**: While the Short HMI meets some requirements (e.g., initiating calls through SWP), it falls short in other areas, making it incomplete.
+
+These essential details highlight the main points of non-compliance and what is missing in the 'Short HMI' to meet the requirements outlined in 'Text_SSTS'.","**HMI Call Initiation Functionality Summary:**
+
+The Human-Machine Interface (HMI) enables drivers to initiate calls through various methods:
+
+*   **SWP Android:** Drivers can access recent calls, select a number, and initiate a call using the Hands-Free Phone functionality.
+*   **Voice Assistant:** Drivers can use voice commands to place calls from their contact list or a specific number. If no name is found in the contact list of a supported messenger, the assistant suggests placing a call via phone.
+*   **Mobile Phone:** Although not available on the HMI, drivers can make calls through their mobile phone.
+
+**Critical Issues and Discrepancies:**
+
+1.  **Missing Voice Command Support**: The HMI lacks an option for voice commands to initiate calls, unlike STSS requirements.
+2.  **Incomplete Call Status Display**: The HMI displays call status via SWP during the call but does not show numbers input during the call.
+3.  **No Call Initiation through Mobile Phone**: The HMI does not provide a way to make a call through the mobile phone, despite being specified in STSS.
+
+**Summary of Requirements:**
+
+To meet the requirements outlined in STSS:
+
+1.  Enable voice command support for initiating calls.
+2.  Provide a way to make calls through the mobile phone.
+3.  Display numbers input during the call on the HMI.
+
+These enhancements would bring the HMI in compliance with STSS and provide a more comprehensive calling experience for drivers.",PC
